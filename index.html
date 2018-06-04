@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+    WebForm
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+</head>
+<body>
+    <header>
+        <h2>Let's talk</h2>
+        Think You have what it takes.Show us
+    </header>
+    <form >
+        <div class="container">
+            <div class="headings"> <h4>1. Personal information</h4></div>
+            <div class="personal-container1">
+                <div class="name">
+                    <div>
+                        <input type="text" id="full-name" class="form.control" placeholder="Full Name*" required>
+                        <label class="form-control-placeholder" for="full-name">Full Name</label> 
+                        <span id="name-warning"></span>
+                    </div>
+                    <div>
+                        <input type="email" id="email" placeholder="Email*" required >
+                        <label>Email</label><br/>
+                        <span id="email-warning"></span>
+                    </div>
+                    <div>
+                        <input type="email" id="email1" placeholder="Re-enter Email" required >
+                        <label>Re-enter Email</label><br/>
+                        <span id="email1-warning"></span>
+                    </div>              
+                </div>
+                <div class="phone-number">
+                    <div> 
+                        <input type="tel" id="phone" placeholder="Phone*" minlength="10" maxlength="15" required pattern="^(0{2}|\+)[0-9]{3}[0-9]{9}">
+                        <label>Phone Number</label><br/>
+                        <span id="phone-warning"></span>
+                    </div>          
+
+                </div>
+            </div> 
+            <div class="personal-container2">
+                <div class="adderess">
+                    <div id="adderess">
+                        <label>Adderess</label><br/>
+                        <input type="text"  placeholder="Adderess*"  minlength="2" maxlength="20" required><br/>
+                        <input type="text">
+                        <span id="adderess-warning"></span>
+                    </div>                       
+                    <div class="place">  
+                        <div>
+                            <label>City</label><br/>  
+                            <input type="text" id="city" placeholder="City* " required  minlength="2" maxlength="20" >
+                            <span class="city-state-country"></span> 
+                        </div> 
+                        <div>
+                            <label>State</label><br/>  
+                            <input type="text"id="state"  placeholder="State"  minlength="2" maxlength="20" >
+                            <span class="city-state-country"></span>  
+                        </div> 
+                        <div>
+                            <label>Country</label><br/>  
+                            <input type="text" id="country" placeholder="Country/Region*"required >
+                            <span class="city-state-country"></span>  
+                        </div>  
+                        <div>
+                            <label>Zipcode</label><br/>  
+                            <input type="number" id="zipcode" placeholder="Zip/Postal Code*" required>
+                            <span id="zipcode-error"></span>  
+                        </div>                            
+                    </div>
+                        <input type="text" placeholder=" How did you hear about us ">
+                    </div>
+                </div>
+            </div> 
+            <div class="headings"><h4>2. Skills and location</h4></div>
+            <h4>which is your primary design decepline?*</h4>
+            <div class="radio">
+                <input id="btn1" type="radio" name="test"> 
+                  <label for="btn1" class="checkbox">Design Research
+                  </label>
+                <input id="btn2" type="radio" name="test" > 
+                <label for="btn2" class="checkbox">Visual Design
+                    </label>
+                <input id="btn3" type="radio" name="test"> 
+                <label for="btn3"class="checkbox">UX Design 
+                    </label>
+                <input id="btn4" type="radio" name="test">
+                <label for="btn4" class="checkbox"> Front-end-Dev
+                    </label>
+            </div>
+            <div class="check-box">
+                <div class="left">
+                    <h4>Do you have experience with any other deceplines?</h4>
+                    <div>
+                        <div class="left-checkbox">
+                            <div>
+                                <input id="left-checked1" class="checkbox-deciplines"type="checkbox" name="options[]" value="Option 1" >
+                                <label for="left-checked1" class="checkbox">Visual Disign
+                                </label>
+                            </div>
+                            <div>
+                                <input id="left-checked2" class="checkbox-deciplines" type="checkbox" name="options[]" value="Option 2">
+                                <label for="left-checked2" class="checkbox">UX Design
+                                </label>
+                            </div>
+                            <div>
+                                <input id="left-checked3" class="checkbox-deciplines" type="checkbox"name="options[]" value="Option 3">
+                                <label for="left-checked3" class="checkbox">Frontend-dev
+                                </label>
+                            </div>                       
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <h4>Where are you interested in working?</h4>
+                    <p>you must leagally authorized to work without visa and sponsership in the region you chosen </p>
+                    <div>
+                        <div class="right-checkbox">
+                            <div>
+                                <input id="right-checked1" type="checkbox" class="checkbox-location">
+                                <label for="right-checked1" class="checkbox">Austin, Texas
+                                </label>
+                            </div>
+                            <div>
+                                <input id="right-checked2" type="checkbox" class="checkbox-location">
+                                <label for="right-checked2" class="checkbox">New York,New York
+                                </label>
+                            </div>    
+                            <div>
+                                <input id="right-checked3" type="checkbox" class="checkbox-location">
+                                <label for="right-checked3" class="checkbox">Toronto, Canada
+                                </label>
+                            </div>
+                            <div>
+                                <input id="right-checked3" type="checkbox" class="checkbox-location">
+                                <label for="right-checked3" class="checkbox">Shanghai, China
+                                </label>
+                            </div>
+                            <div>
+                                <input id="right-checked4" type="checkbox" class="checkbox-location">
+                                <label for="right-checked4" class="checkbox">Dublin, Ireland
+                                </label>
+
+                            </div> 
+                            <div>
+                                <input id="right-checked5" type="checkbox" class="checkbox-location">
+                                <label for="right-checked5" class="checkbox">Hursley, United Kingdom
+                                </label>
+                            </div>  
+                            <div>
+                                <input id="right-checked6" type="checkbox" class="checkbox-location">
+                                <label for="right-checked6" class="checkbox">Boeblingen, Germany
+                                </label>
+                            </div>
+                            <div>
+                                <input id="right-checked6" type="checkbox" class="checkbox-location">
+                                <label for="right-checked6" class="checkbox">Somewhere else
+                                </label>
+                            </div>                                 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="headings"><h4>3. Portfolio</h4> </div>
+            <div class="portfolio">
+                <p>Prove thet you are next IBM'S greatest designer by showing us who you are.What you have done.How you think. Tell us your story</p>
+                <input type="link" id="link" placeholder="Portfolio link"  minlength="2">
+                <span id="link-error"></span>  
+                <textarea name="message" placeholder="Anything else?(another link,availability,etc.)?" required minlength="5" maxlength="200" ></textarea>
+                <br>
+                <button id="submit-btn" type="submit">submit</button>
+            </div>      
+        </div>   
+    </form>
+</body>
+<script src="main.js"></script>
+</html>
