@@ -21,7 +21,9 @@ input{
 .name div,.phone-number div {
     position: relative;
 }
-
+.warning{
+    color:red;
+}
 .name div label,.phone-number label{  
     visibility: hidden;
     position: absolute;
@@ -40,9 +42,7 @@ input:focus + label {
    cursor: pointer;
    visibility: visible;
 }
-input.invalid {
-background-color:#1abc9c ;
-}
+
 header{
     text-align: center;
     color: white;
